@@ -35,14 +35,14 @@ function admin_bar_login_menu( $wp_admin_bar ) {
 
 	$wp_admin_bar->add_menu( array(
 		'id'     => 'lostpassword',
-		'title'  => '<strong>' . __( 'Lost your password?' ) . '</strong>',
+		'title'  => __( 'Lost your password?' ),
 		'href' => wp_lostpassword_url()
 	) );
 
 	$wp_admin_bar->add_menu( array(
 		'id'     => 'register',
 		'title'  => __( 'Register' ),
-		'href' => site_url('wp-login.php?action=register', 'login')
+		'href' => site_url( 'wp-login.php?action=register', 'login' )
 	) );
 }
 
