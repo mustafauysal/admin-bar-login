@@ -18,3 +18,11 @@ This is what this plugin is for: it shows the login form right there in the admi
 == Screenshots ==
 
 1. Admin Login Form in action.
+
+== Changelog ==
+
+= 1.0.1 =
+* show Register link only when registration is enabled
+
+= 1.0 =
+* initial release
