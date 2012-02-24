@@ -3,7 +3,7 @@ Contributors: scribu, appthemes
 Tags: login, admin bar,
 Requires at least: 3.2
 Tested up to: 3.3
-Stable tag: trunk
+Stable tag: 1.0
 
 Show login form in the admin bar for non-logged-in users.
 
