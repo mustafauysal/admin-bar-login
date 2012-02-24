@@ -39,10 +39,12 @@ function admin_bar_login_menu( $wp_admin_bar ) {
 		'href' => wp_lostpassword_url()
 	) );
 
-	$wp_admin_bar->add_menu( array(
-		'id'     => 'register',
-		'title'  => __( 'Register' ),
-		'href' => site_url( 'wp-login.php?action=register', 'login' )
-	) );
+	if ( get_option( 'users_can_register' ) ) {
+		$wp_admin_bar->add_menu( array(
+			'id'     => 'register',
+			'title'  => __( 'Register' ),
+			'href' => site_url( 'wp-login.php?action=register', 'login' )
+		) );
+	}
 }
 
