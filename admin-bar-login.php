@@ -5,8 +5,6 @@ Version: 1.0.1-alpha
 Description: Show login form in the admin bar for non-logged-in users.
 Author: scribu
 Plugin URI: http://wordpress.org/extend/plugins/admin-bar-login/
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
 add_action( 'show_admin_bar', '__return_true' );
