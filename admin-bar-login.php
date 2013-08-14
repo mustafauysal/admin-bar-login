@@ -1,13 +1,13 @@
 <?php
 /*
 Plugin Name: Admin Bar Login
-Version: 1.0.1-alpha
+Version: 1.0.1 - beta
 Description: Show login form in the admin bar for non-logged-in users.
 Author: scribu
 Plugin URI: http://wordpress.org/extend/plugins/admin-bar-login/
 */
 
-add_action( 'show_admin_bar', '__return_true' );
+add_action( 'show_admin_bar', '__return_true', 999 );
 
 add_action( 'template_redirect', 'admin_bar_login_css' );
 
@@ -16,7 +16,7 @@ function admin_bar_login_css() {
 	if ( is_user_logged_in() )
 		return;
 
-	wp_enqueue_style( 'admin-bar-login', plugins_url( 'admin-bar-login.css', __FILE__ ), array(), '1.0' );
+	wp_enqueue_style( 'admin-bar-login', plugins_url( 'admin-bar-login.css', __FILE__ ), array(), '1.0.1' );
 
 	add_action( 'admin_bar_menu', 'admin_bar_login_menu' );
 }
