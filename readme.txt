@@ -1,8 +1,8 @@
 === Admin Bar Login ===
-Contributors: scribu, appthemes
+Contributors: scribu, appthemes, m_uysl
 Tags: login, admin bar,
 Requires at least: 3.2
-Tested up to: 3.3
+Tested up to: 3.7
 Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -25,6 +25,7 @@ This is what this plugin is for: it shows the login form right there in the admi
 
 = 1.0.1 =
 * show Register link only when registration is enabled
+* small css changes
 
 = 1.0 =
 * initial release
