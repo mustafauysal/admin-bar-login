@@ -23,6 +23,9 @@ This is what this plugin is for: it shows the login form right there in the admi
 
 == Changelog ==
 
+= 1.0.2 =
+* css improvements
+
 = 1.0.1 =
 * show Register link only when registration is enabled
 * small css changes
