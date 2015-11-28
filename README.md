@@ -19,8 +19,6 @@ This is what this plugin is for: it shows the login form right there in the admi
 
 ## Screenshots ##
 
-###1. Admin Login Form in action.###
-
 1. Admin Login Form in action.
 
 ## Changelog ##
