@@ -20,18 +20,18 @@ This is what this plugin is for: it shows the login form right there in the admi
 ## Screenshots ##
 
 ###1. Admin Login Form in action.###
-![Admin Login Form in action.](https://ps.w.org/admin-bar-login/assets/screenshot-1.png)
 
+1. Admin Login Form in action.
 
 ## Changelog ##
 
 ### 1.0.2 ###
-* css improvements
+ - css improvements
 
 ### 1.0.1 ###
-* show Register link only when registration is enabled
-* small css changes
+ - show Register link only when registration is enabled
+ - small css changes
 
 ### 1.0 ###
-* initial release
+ - initial release
 
