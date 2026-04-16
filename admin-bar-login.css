@@ -1,63 +1,232 @@
-#adminloginform p {
-	display: inline;
+#wpadminbar #wp-admin-bar-admin-bar-login > .ab-item,
+#wpadminbar #wp-admin-bar-admin-bar-login > .ab-empty-item {
+	display: flex;
+	align-items: center;
+	height: 32px;
+	padding: 0 10px;
+	background: transparent;
 }
 
-#adminloginform .login-username input,
-#adminloginform .login-password input {
-	font: 13px/24px sans-serif;
-	padding:0 4px 0 4px;
-	height: 24px;
-	line-height: 20px;
-	border: none;
-	color: #555;
-	text-shadow: 0 1px 0 #fff;
-	background-color: rgba( 255, 255, 255, 0.9 );
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
+#wpadminbar #wp-admin-bar-admin-bar-login.hover > .ab-item,
+#wpadminbar #wp-admin-bar-admin-bar-login:hover > .ab-item,
+#wpadminbar #wp-admin-bar-admin-bar-login > .ab-item:focus {
+	background: transparent;
+	color: inherit;
 }
 
-#adminloginform #wp-submit {
-	display: inline-block;
-	text-decoration: none;
-	font-size: 13px;
-	line-height: 26px;
-	height: 28px;
-	margin: 0 0 2px 0;
-	padding: 0 10px 1px;
-	cursor: pointer;
-	border-width: 1px;
-	border-style: solid;
-	-webkit-border-radius: 3px;
-	-webkit-appearance: none;
-	border-radius: 3px;
+#wpadminbar #wp-admin-bar-admin-bar-login .ab-item {
+	overflow: visible;
+	white-space: normal;
+}
+
+#wpadminbar .admin-bar-login-form {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-wrap: nowrap;
+	gap: 8px;
+	max-width: 100%;
+	min-height: 32px;
+	margin: 0;
+	padding: 0;
 	white-space: nowrap;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing:    border-box;
-	box-sizing:         border-box;
-	background: #2ea2cc;
-	border-color: #0074a2;
-	-webkit-box-shadow: inset 0 1px 0 rgba(120,200,230,0.5), 0 1px 0 rgba(0,0,0,.15);
-	box-shadow: inset 0 1px 0 rgba(120,200,230,0.5), 0 1px 0 rgba(0,0,0,.15);
-	color: #fff;
+}
+
+#wpadminbar .admin-bar-login-fields,
+#wpadminbar .admin-bar-login-controls,
+#wpadminbar .admin-bar-login-links {
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+	gap: 8px;
+}
+
+#wpadminbar .admin-bar-login-mobile-actions {
+	display: none;
+}
+
+#wpadminbar .admin-bar-login-links {
+	font-size: 12px;
+	line-height: 1;
+}
+
+#wpadminbar .admin-bar-login-link {
+	color: #c3c4c7;
 	text-decoration: none;
 }
 
-#adminloginform #wp-submit:active {
-	background: #1e8cbe;
-	border-color: #005684;
-	color: rgba(255,255,255,0.95);
-	-webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,0.1);
-	box-shadow: inset 0 1px 0 rgba(0,0,0,0.1);
+#wpadminbar .admin-bar-login-link:hover,
+#wpadminbar .admin-bar-login-link:focus {
+	color: #fff;
+	text-decoration: underline;
 }
 
-#adminloginform #wp-submit:hover {
-	background: #1e8cbe;
-	border-color: #0074a2;
-	-webkit-box-shadow: inset 0 1px 0 rgba(120,200,230,0.6);
-	box-shadow: inset 0 1px 0 rgba(120,200,230,0.6);
+#wpadminbar .admin-bar-login-link-register {
+	font-weight: 600;
+}
+
+#wpadminbar .admin-bar-login-screen-reader-text {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect( 0, 0, 0, 0 );
+	white-space: nowrap;
+	border: 0;
+}
+
+#wpadminbar .admin-bar-login-input {
+	width: 148px;
+	max-width: 18rem;
+	min-height: 28px;
+	padding: 0 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.22 );
+	border-radius: 4px;
+	background: rgba( 255, 255, 255, 0.95 );
+	color: #1d2327;
+	font-size: 13px;
+	line-height: 1.4;
+	box-shadow: none;
+}
+
+#wpadminbar .admin-bar-login-input-username {
+	width: 17ch;
+	max-width: 20rem;
+}
+
+#wpadminbar .admin-bar-login-input-password {
+	width: 12ch;
+}
+
+#wpadminbar .admin-bar-login-input::placeholder {
+	color: #646970;
+}
+
+#wpadminbar .admin-bar-login-input:focus,
+#wpadminbar .admin-bar-login-submit:focus,
+#wpadminbar .admin-bar-login-remember input:focus {
+	outline: 2px solid #72aee6;
+	outline-offset: 1px;
+}
+
+#wpadminbar .admin-bar-login-remember {
+	display: inline-flex;
+	flex: 0 0 auto;
+	align-items: center;
+	gap: 5px;
+	color: #f0f0f1;
+	font-size: 12px;
+	line-height: 1;
+}
+
+#wpadminbar .admin-bar-login-remember input {
+	margin: 0;
+}
+
+#wpadminbar .admin-bar-login-remember-label {
+	display: inline-block;
+}
+
+#wpadminbar .admin-bar-login-submit {
+	display: inline-flex;
+	flex: 0 0 auto;
+	align-items: center;
+	justify-content: center;
+	min-height: 28px;
+	padding: 0 12px;
+	border: 1px solid #2271b1;
+	border-radius: 4px;
+	background: #2271b1;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 1;
+	cursor: pointer;
+}
+
+#wpadminbar .admin-bar-login-submit:hover,
+#wpadminbar .admin-bar-login-submit:active {
+	background: #135e96;
+	border-color: #135e96;
 	color: #fff;
 }
 
-#wp-admin-bar-register a {
-	font-weight: bold;
+@media screen and (max-width: 1080px) {
+	#wpadminbar .admin-bar-login-input {
+		width: 124px;
+		max-width: 14rem;
+	}
+
+	#wpadminbar .admin-bar-login-input-username {
+		width: 15ch;
+	}
+
+	#wpadminbar .admin-bar-login-input-password {
+		width: 11ch;
+	}
+
+	#wpadminbar .admin-bar-login-remember-label {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect( 0, 0, 0, 0 );
+		white-space: nowrap;
+		border: 0;
+	}
+}
+
+@media screen and (max-width: 782px) {
+	#wpadminbar {
+		height: auto;
+		min-height: 46px;
+	}
+
+	#wpadminbar #wp-admin-bar-admin-bar-login {
+		float: none;
+		clear: both;
+		width: 100%;
+	}
+
+	#wpadminbar #wp-admin-bar-admin-bar-login > .ab-item,
+	#wpadminbar #wp-admin-bar-admin-bar-login > .ab-empty-item {
+		display: block;
+		height: auto;
+		width: 100%;
+		max-width: none;
+		padding: 8px 10px 10px;
+	}
+
+	#wpadminbar .admin-bar-login-form {
+		display: grid;
+		grid-template-columns: minmax( 0, 1fr );
+		flex-wrap: wrap;
+		gap: 8px;
+		padding: 0;
+		white-space: normal;
+	}
+
+	#wpadminbar .admin-bar-login-fields,
+	#wpadminbar .admin-bar-login-controls,
+	#wpadminbar .admin-bar-login-links {
+		display: none;
+	}
+
+	#wpadminbar .admin-bar-login-mobile-actions {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 12px;
+	}
+
+	#wpadminbar .admin-bar-login-mobile-login {
+		min-width: 96px;
+		padding-right: 10px;
+		padding-left: 10px;
+		text-decoration: none;
+	}
 }
