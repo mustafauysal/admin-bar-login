@@ -1,35 +1,13 @@
-# Admin Bar Login #
-Contributors: scribu, appthemes, m_uysl  
-Tags: login, admin bar,  
-Requires at least: 3.2  
-Tested up to: 5.2  
-Stable tag: 1.0.2  
-License: GPLv2 or later  
-License URI: http://www.gnu.org/licenses/gpl-2.0.html  
+# Admin Bar Login
 
-Show login form in the admin bar for non-logged-in users.
+Admin Bar Login is a small WordPress plugin that keeps the frontend admin bar visible for logged-out visitors and adds a compact sign-in entry point there.
 
-## Description ##
+## Why This Exists
 
-By default, when a visitor accesses your site, the admin bar is not shown. This makes sense for a blog, where you're the only one that has an account.
+This plugin is most useful for sites where signing in is a frequent primary action, such as:
 
-However, if you're running a site where most visitors need to be logged in before doing anything useful, you probably want to make it as easy as possible for them to log in or register.
-
-This is what this plugin is for: it shows the login form right there in the admin bar, so that users don't need to load another page just to enter their username and password.
-
-## Screenshots ##
-
-1. Admin Login Form in action.
-
-## Changelog ##
-
-### 1.0.2 ###
- - css improvements
-
-### 1.0.1 ###
- - show Register link only when registration is enabled
- - small css changes
-
-### 1.0 ###
- - initial release
-
+- membership sites
+- customer or client portals
+- course platforms
+- private communities
+- sites with gated frontend content
