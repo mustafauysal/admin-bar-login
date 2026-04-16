@@ -3,14 +3,12 @@
  * Plugin Name: Admin Bar Login
  * Plugin URI:  https://wordpress.org/plugins/admin-bar-login/
  * Description: Show a compact login form in the admin bar for logged-out visitors.
- * Version:     1.1.0
+ * Version:     1.1.1
  * Author:      scribu
  * License:     GPLv2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Network:     true
  * Requires at least: 5.8
- * Tested up to: 6.9
- * Requires PHP: 7.2.24
  * Text Domain: admin-bar-login
  */
 
@@ -18,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'ADMIN_BAR_LOGIN_VERSION', '1.1.0' );
+define( 'ADMIN_BAR_LOGIN_VERSION', '1.1.1' );
 
 add_filter( 'show_admin_bar', 'admin_bar_login_force_toolbar_for_logged_out_users', 999 );
 add_action( 'wp_enqueue_scripts', 'admin_bar_login_enqueue_assets' );

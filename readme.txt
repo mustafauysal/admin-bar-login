@@ -4,7 +4,7 @@ Tags: login, admin bar, toolbar, frontend login
 Requires at least: 5.8
 Tested up to: 7.0
 Requires PHP: 7.2
-Stable tag: 1.1.0
+Stable tag: 1.1.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,6 +23,10 @@ This is what this plugin is for: it shows the login form right there in the admi
 1. Admin Login Form in action.
 
 == Changelog ==
+
+= 1.1.1 =
+* load blueprint without logged-in user
+* cleaned up plugin header metadata
 
 = 1.1.0 =
 * modernized the frontend toolbar integration for current WordPress versions
