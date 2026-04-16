@@ -1,0 +1,24 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"landingPage": "/",
+	"preferredVersions": {
+		"php": "8.3",
+		"wp": "latest"
+	},
+	"phpExtensionBundles": [
+		"kitchen-sink"
+	],
+	"steps": [
+		{
+			"step": "setSiteOptions",
+			"options": {
+				"blogname": "Admin Bar Login Demo",
+				"blogdescription": "Preview the frontend login toolbar as a logged-out visitor."
+			}
+		},
+		{
+			"step": "runPHP",
+			"code": "<?php require_once 'wordpress/wp-load.php'; $existing_page = get_page_by_path( 'admin-bar-login-demo' ); if ( ! $existing_page ) { $page_id = wp_insert_post( array( 'post_title' => 'Admin Bar Login Demo', 'post_name' => 'admin-bar-login-demo', 'post_content' => '<!-- wp:heading {\"level\":1} --><h1>Admin Bar Login Demo</h1><!-- /wp:heading --><!-- wp:paragraph --><p>This preview keeps the WordPress admin bar visible for logged-out visitors and adds a compact login entry point directly in the toolbar.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>Try the login controls in the top admin bar. On narrow screens, the preview falls back to a simpler login call to action.</p><!-- /wp:paragraph -->', 'post_status' => 'publish', 'post_type' => 'page' ) ); } else { $page_id = (int) $existing_page->ID; } update_option( 'show_on_front', 'page' ); update_option( 'page_on_front', $page_id ); ?>"
+		}
+	]
+}
